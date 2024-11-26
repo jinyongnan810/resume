@@ -1,15 +1,69 @@
 // Reset some default browser styles
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 // Basic body styling
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  .my-portrait {
+    flex: 1;
+    height: 100%;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .my-info {
+    padding: 1rem;
+    flex: 3;
+    .name {
+      .kanji {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .kana {
+        font-size: 1rem;
+        font-weight: 200;
+      }
+    }
+    .experiences {
+      margin-top: 2rem;
+      .experience {
+        margin-bottom: 1rem;
+        .midashi {
+          display: flex;
+          align-items: center;
+          .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+          }
+          .time-span {
+            margin-left: 1rem;
+            font-size: 1rem;
+            color: #777;
+            span {
+              color: #999;
+              margin: 0rem 1rem;
+            }
+          }
+        }
+        .details {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+  }
 }
